@@ -2,7 +2,7 @@
 import { createBrowserRouter} from "react-router-dom";
 import { Login } from "../pages/Login";
 import { Dashboard } from "../pages/Dashboard";
-import Home from "../pages/Home";
+import {Home} from "../pages/Home";
 
 export const router = createBrowserRouter([
     {

@@ -9,8 +9,8 @@ export function Login() {
     const [isShow, setIsShow] = useState(false)
     const trocaPassword = () => setIsShow(!isShow)
 
-    const [isDark, setIsDark] = useState(false)
-    const trocaCor = () => setIsDark(!isDark)
+    const isDark = false
+   
 
     const navigate = useNavigate()
 
@@ -76,15 +76,15 @@ export function Login() {
                         <br />
                         <ToastContainer />
                         <form className="mt-12" id="form" onSubmit={handleLogin}>
-                            <label htmlFor="email" className="text-slate-50 text-[#656565]" >Email</label>
+                            <label htmlFor="email" className=" text-[#656565]" >Email</label>
                             <input placeholder='Introduza seu email...' className="mt-1 block w-full p-1
                                 rounded-md ring-1 ring-[#EEE] placeholder-[#838383]
-                                focus:outline-none p-2 text-sm
+                                focus:outline-none  text-sm
                                  "
                                  type="text" id="email" value={email} onChange={e => setEmail(e.target.value)} />
                             <br />
                             <div>
-                                <label htmlFor="senha" className="text-slate-50 text-[#656565]" >Senha</label>
+                                <label htmlFor="senha" className=" text-[#656565]" >Senha</label>
                                 
                                 <div className="flex justify-between bg-[#fff] rounded-md ring-1 ring-[#eee] ">
                                     <input type={isShow ? "text" : "password"} id="senha" name="senha" placeholder='Introduza sua senha...' className="
