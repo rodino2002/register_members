@@ -25,16 +25,7 @@ export function Home() {
   const handleLogin = (e: any) => {
     e.preventDefault();
     if (validate()) {
-      /*const { data, status } = await axios.post(`https://aoa.recarga.pagaso.co.ao/api/ma/login.json`, {
-          email: email,
-          senha: password
-      },
-          {
-              headers: {
-                  "X-API-KEY": "bklsqzizhcaehinpivwahbaekhnyjxfdsregucwmbudjwgjsrqwnolhrocufvwxomybqhotxgedoyujrkxuocihmrdrmuxlvshwfnyalyiqfsekpuivugoiocwgtwqzu"
-              }
-          }
-      )*/
+     
       if (password === "2024" && email === "pagaso.dev@divTecnologia.com") {
         sessionStorage.setItem('email', email)
         navigate("/notification")
